@@ -672,7 +672,7 @@ const ProjectCard = ({ title, description, icon, gradient, tags, points, demoLin
             <a href={codeLink || 'https://loganix.com/'} target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center w-1/2 bg-slate-700 text-white font-semibold py-2 px-4 rounded-lg hover:bg-slate-600 transition-all transform hover:scale-105">
                     <CodeIcon className="w-5 h-5 mr-2"/> LINK
 
-              
+              </a>
               
               {/* <a href={codeLink || '#'} target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center w-1/2 bg-slate-700 text-white font-semibold py-2 px-4 rounded-lg hover:bg-slate-600 transition-all transform hover:scale-105">
                     <CodeIcon className="w-5 h-5 mr-2"/> Code
@@ -696,6 +696,7 @@ const CertificationCard = ({ title, subtitle, icon }) => (
         </div>
     </GlassCard>
 );
+
 
 
 
