@@ -272,16 +272,9 @@ export default function App() {
                   <a href="#projects" className="inline-flex items-center bg-gradient-to-r from-blue-500 to-purple-600 text-white font-semibold py-3 px-6 rounded-lg hover:from-blue-600 hover:to-purple-700 transition-all shadow-lg transform hover:scale-105">
                     <ChevronLeftIcon className="w-5 h-5 mr-2" /> View My Work <ChevronRightIcon className="w-5 h-5 ml-2" />
                   </a>
-                  <a href="https://drive.google.com/file/d/1lOJoJFRCoOuU55E7OstOfxHiISuTCcAb/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="inline-flex items-center bg-slate-200 dark:bg-slate-800 text-slate-800 dark:text-white font-semibold py-3 px-6 rounded-lg hover:bg-slate-300 dark:hover:bg-slate-700 transition-all shadow-lg transform hover:scale-105">
-                    Download Resume <ExternalLinkIcon className="w-5 h-5 ml-2" />
-                  </a>
                 </div>
                 <div className="flex justify-center md:justify-start gap-6">
-                    <a href="https://www.linkedin.com/in/yash-katare-seo/" target="_blank" rel="noopener noreferrer" className="text-slate-500 dark:text-slate-400 hover:text-blue-500 transition transform hover:scale-110"><LinkedInIcon className="w-8 h-8"/></a>
-                    {/*<a href="https://github.com/TusharVarathe" target="_blank" rel="noopener noreferrer" className="text-slate-500 dark:text-slate-400 hover:text-slate-600 dark:hover:text-slate-300 transition transform hover:scale-110"><GithubIcon className="w-8 h-8"/></a>*/}
-                   {/*} <a href="https://leetcode.com/u/tusharvarathe/" target="_blank" rel="noopener noreferrer" className="text-slate-500 dark:text-slate-400 hover:text-yellow-500 transition transform hover:scale-110"><LeetCodeIcon className="w-8 h-8"/></a>
-                    <a href="https://codeforces.com/profile/tushar13v" target="_blank" rel="noopener noreferrer" className="text-slate-500 dark:text-slate-400 hover:text-red-500 transition transform hover:scale-110"><CodeforcesIcon className="w-8 h-8"/></a>*/}
-
+                 
                 </div>
               </div>
               <div className="md:w-1/2 flex justify-center">
@@ -347,11 +340,10 @@ export default function App() {
                      </div>
                 </GlassCard>
                  <GlassCard>
-                     <h3 className="text-2xl font-semibold mb-4 text-slate-800 dark:text-white">Location & Contact</h3>
+                     <h3 className="text-2xl font-semibold mb-4 text-slate-800 dark:text-white">Location </h3>
                      <div className="space-y-3">
                         <p className="flex items-center"><MapPinIcon className="w-5 h-5 mr-3 text-blue-500"/>Indore, M.P, India</p>
-                        <p className="flex items-center"><MailIcon className="w-5 h-5 mr-3 text-blue-500"/><a href="mailto:yashkatare997@gmail.com">yashkatare997@gmail.com</a></p>
-                        <p className="flex items-center"><PhoneIcon className="w-5 h-5 mr-3 text-blue-500"/><a href="tel:7000964548">+91 7000964548</a></p>
+                        
                      </div>
                  </GlassCard>
               </div>
@@ -535,80 +527,19 @@ export default function App() {
           </div>
         </section>
 
-        {/* --- Contact Section --- */}
+      {/* --- Contact Section --- */}
         <section id="contact" className="py-20">
             <div className="container mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="text-center mb-12">
-                    <SectionTitle>Get In Touch</SectionTitle>
-                    <p className="text-lg mt-2">Let's discuss opportunities, collaborations, or just connect professionally</p>
-                </div>
+                    
+                    </div>
                 <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
                     <div className="space-y-8">
-                        <GlassCard>
-                            <h3 className="text-2xl font-semibold mb-4 text-slate-800 dark:text-white">Contact Information</h3>
-                            <div className="space-y-4">
-                               <p className="flex items-start"><MailIcon className="w-6 h-6 mr-4 text-blue-500"/><span><a href="mailto:yashkatare997@gmail.com">yashkatare997@gmail.com</a></span></p>
-                               <p className="flex items-start"><PhoneIcon className="w-6 h-6 mr-4 text-blue-500"/><span><a href="tel:7000964548">+91 7000964548</a></span></p>
-                               <p className="flex items-start"><MapPinIcon className="w-6 h-6 mr-4 text-blue-500"/><span>Indore, Madhya Pradesh, India</span></p>
-                            </div>
-                        </GlassCard>
-                        <GlassCard>
-                            <h3 className="text-2xl font-semibold mb-4 text-slate-800 dark:text-white">Connect With Me</h3>
-                            <div className="grid grid-cols-2 gap-4">
-                                <a href="https://www.linkedin.com/in/yash-katare-seo/" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center p-3 bg-slate-100 dark:bg-slate-800/50 rounded-lg hover:bg-slate-200 dark:hover:bg-slate-700 transition transform hover:scale-105"><LinkedInIcon className="w-6 h-6 mr-2 text-blue-600"/>LinkedIn</a>
-                                
-                                <a
-                                href="mailto:yashkatare997@gmail.com"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                aria-label="Send email to Yash"
-                                className="flex items-center justify-center p-3 bg-slate-100 dark:bg-slate-800/50 rounded-lg hover:bg-slate-200 dark:hover:bg-slate-700 transition transform hover:scale-105"
-                                >
-                                {/* simple mail icon */}
-                                <svg xmlns="http://www.w3.org/2000/svg" className="w-6 h-6 mr-2 text-red-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                                <path d="M3 8.5v7a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7" />
-                                <path d="M21 8.5L12 13 3 8.5" />
-                                <path d="M21 8.5V6a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v2.5" />
-                                </svg>
-                                Email
-                                </a>
-
-                                
-                                {/* <a href="mailto:nayanmahalle2@gmail.com" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center p-3 bg-slate-100 dark:bg-slate-800/50 rounded-lg hover:bg-slate-200 dark:hover:bg-slate-700 transition transform hover:scale-105"><GithubIcon className="w-6 h-6 mr-2"/>Mail box</a>
-                                <a href="https://leetcode.com/u/tusharvarathe/" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center p-3 bg-slate-100 dark:bg-slate-800/50 rounded-lg hover:bg-slate-200 dark:hover:bg-slate-700 transition transform hover:scale-105"><LeetCodeIcon className="w-6 h-6 mr-2 text-yellow-500"/>LeetCode</a>
-                                <a href="https://codeforces.com/profile/tushar13v" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center p-3 bg-slate-100 dark:bg-slate-800/50 rounded-lg hover:bg-slate-200 dark:hover:bg-slate-700 transition transform hover:scale-105"><CodeforcesIcon className="w-6 h-6 mr-2"/>Codeforces</a>*/}
-                            </div>
-                        </GlassCard>
+                      
+                       
                     </div>
                     <div className="lg:col-span-2">
-                        <GlassCard>
-                            <h3 className="text-2xl font-semibold mb-6 text-slate-800 dark:text-white">Send a Message</h3>
-                            <form className="space-y-6" onSubmit={(e) => { e.preventDefault(); alert('Message sent! (not really, this is a demo)'); }}>
-                                <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-                                    <div>
-                                        <label htmlFor="full-name" className="block text-sm font-medium mb-2">Full Name</label>
-                                        <input type="text" name="full-name" id="full-name" placeholder="Your full name" className="w-full px-4 py-2 rounded-lg bg-slate-100 dark:bg-slate-800/50 border border-slate-200 dark:border-slate-700 focus:ring-blue-500 focus:border-blue-500" />
-                                    </div>
-                                    <div>
-                                        <label htmlFor="email-address" className="block text-sm font-medium mb-2">Email Address</label>
-                                        <input type="email" name="email-address" id="email-address" placeholder="your.email@example.com" className="w-full px-4 py-2 rounded-lg bg-slate-100 dark:bg-slate-800/50 border border-slate-200 dark:border-slate-700 focus:ring-blue-500 focus:border-blue-500" />
-                                    </div>
-                                </div>
-                                <div>
-                                    <label htmlFor="subject" className="block text-sm font-medium mb-2">Subject</label>
-                                    <input type="text" name="subject" id="subject" placeholder="What's this about?" className="w-full px-4 py-2 rounded-lg bg-slate-100 dark:bg-slate-800/50 border border-slate-200 dark:border-slate-700 focus:ring-blue-500 focus:border-blue-500" />
-                                </div>
-                                <div>
-                                    <label htmlFor="message" className="block text-sm font-medium mb-2">Message</label>
-                                    <textarea name="message" id="message" rows="5" placeholder="Your message here..." className="w-full px-4 py-2 rounded-lg bg-slate-100 dark:bg-slate-800/50 border border-slate-200 dark:border-slate-700 focus:ring-blue-500 focus:border-blue-500"></textarea>
-                                </div>
-                                <div>
-                                    <button type="submit" className="w-full flex items-center justify-center bg-gradient-to-r from-blue-500 to-purple-600 text-white font-semibold py-3 px-6 rounded-lg hover:from-blue-600 hover:to-purple-700 transition-all shadow-lg transform hover:scale-105">
-                                        Send Message <SendIcon className="w-5 h-5 ml-2" />
-                                    </button>
-                                </div>
-                            </form>
-                        </GlassCard>
+                       
                     </div>
                 </div>
             </div>
@@ -619,13 +550,9 @@ export default function App() {
       <footer className="bg-slate-900/80 text-slate-400 relative z-10">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-8">
             <div className="text-center">
-                <p className="font-semibold text-white mb-4">Software Developer</p>
+                <p className="font-semibold text-white mb-4">SEO Expert || Off-page SEO || On-Page SEO || Techanical SEO || Link Building </p>
                 <div className="flex justify-center gap-6 mb-4">
-                     <a href="https://www.linkedin.com/in/yash-katare-seo/" target="_blank" rel="noopener noreferrer" className="hover:text-blue-400 transition transform hover:scale-110"><LinkedInIcon className="w-6 h-6"/></a>
-                  {/* <a href="https://github.com/TusharVarathe" target="_blank" rel="noopener noreferrer" className="hover:text-white transition transform hover:scale-110"><GithubIcon className="w-6 h-6"/></a>
-                    <a href="https://leetcode.com/u/tusharvarathe/" target="_blank" rel="noopener noreferrer" className="hover:text-yellow-400 transition transform hover:scale-110"><LeetCodeIcon className="w-6 h-6"/></a>
-                    <a href="https://codeforces.com/profile/tushar13v" target="_blank" rel="noopener noreferrer" className="hover:text-red-400 transition transform hover:scale-110"><CodeforcesIcon className="w-6 h-6"/></a>
-                */}
+                  
                 </div>
                 <p className="text-sm">&copy; {new Date().getFullYear()} Yash Katare. Designed with passion for technology and innovation.</p>
             </div>
@@ -674,16 +601,8 @@ const ProjectCard1 = ({ title, description, icon, gradient, tags, points, demoLi
             <div className="mt-auto flex gap-4">
             <a href={codeLink || 'https://loganix.com/'} target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center w-1/2 bg-slate-700 text-white font-semibold py-2 px-4 rounded-lg hover:bg-slate-600 transition-all transform hover:scale-105">
                     <CodeIcon className="w-5 h-5 mr-2"/> LINK
-
               </a>
               
-              {/* <a href={codeLink || '#'} target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center w-1/2 bg-slate-700 text-white font-semibold py-2 px-4 rounded-lg hover:bg-slate-600 transition-all transform hover:scale-105">
-                    <CodeIcon className="w-5 h-5 mr-2"/> Code
-                </a>
-                 <a href={demoLink || '#'} target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center w-1/2 bg-slate-700 text-white font-semibold py-2 px-4 rounded-lg hover:bg-slate-600 transition-all transform hover:scale-105">
-                    <ExternalLinkIcon className="w-5 h-5 mr-2"/> Demo
-                </a>
-               */}
             
             </div>
         </div>
@@ -804,15 +723,6 @@ const ProjectCard5 = ({ title, description, icon, gradient, tags, points, demoLi
     </div>
 );
 
-
-
-
-
-
-
-
-
-
 const CertificationCard = ({ title, subtitle, icon }) => (
     <GlassCard>
         <div className="text-center flex flex-col items-center justify-center h-full">
@@ -822,6 +732,7 @@ const CertificationCard = ({ title, subtitle, icon }) => (
         </div>
     </GlassCard>
 );
+
 
 
 
