@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import profilephoto from './assets/profile.png';
+import profilephoto from './assets/Profile.png';
 
 // --- SVG Icons ---
 // Using SVG icons as components for better control and performance.
@@ -689,4 +689,5 @@ const CertificationCard = ({ title, subtitle, icon }) => (
         </div>
     </GlassCard>
 );
+
 
