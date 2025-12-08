@@ -473,7 +473,7 @@ export default function App() {
                     </a><a href="https://drive.google.com/file/d/1oTHgLv8MLpwhwoAPLaN6PkMLQkejxnuC/view?usp=sharing"><CertificationCard title="Carina Softlabs Internship’" subtitle="Digital marketing SEO-link building" icon={<ShieldIcon className="w-10 h-10 text-blue-400" />} />
                     </a>
 
-                  https://drive.google.com/file/d/1oTHgLv8MLpwhwoAPLaN6PkMLQkejxnuC/view?usp=sharing
+                 
                 </div>
             </div>
         </section>
@@ -822,6 +822,7 @@ const CertificationCard = ({ title, subtitle, icon }) => (
         </div>
     </GlassCard>
 );
+
 
 
 
