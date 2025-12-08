@@ -263,7 +263,7 @@ export default function App() {
                 </h1>
                 <h2 className="text-3xl md:text-4xl font-bold mb-4 bg-gradient-to-r from-blue-400 to-purple-500 text-transparent bg-clip-text">
                   SEO EXPERT <br></br>                  
-                  link building | Outreach | Off-Page SEo
+                  link building | Outreach | Off-Page SEO
                 </h2>
                 <p className="text-lg mb-8 max-w-xl mx-auto md:mx-0">
                   A professional SEO Specialist and Link Building Expert with 1+ year of experience. I’ve worked on multiple niches, helping clients grow organic traffic and improve keyword rankings. I focus on white-hat link building, smart keyword research, technical SEO, and transparent, result-driven strategies. If you need genuine growth and high-quality backlinks, I’m ready to help.
@@ -552,7 +552,7 @@ export default function App() {
                         <GlassCard>
                             <h3 className="text-2xl font-semibold mb-4 text-slate-800 dark:text-white">Connect With Me</h3>
                             <div className="grid grid-cols-2 gap-4">
-                                <a href="https://www.linkedin.com/in/tushar-varathe-a94229325/" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center p-3 bg-slate-100 dark:bg-slate-800/50 rounded-lg hover:bg-slate-200 dark:hover:bg-slate-700 transition transform hover:scale-105"><LinkedInIcon className="w-6 h-6 mr-2 text-blue-600"/>LinkedIn</a>
+                                <a href="https://www.linkedin.com/in/yash-katare-seo/" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center p-3 bg-slate-100 dark:bg-slate-800/50 rounded-lg hover:bg-slate-200 dark:hover:bg-slate-700 transition transform hover:scale-105"><LinkedInIcon className="w-6 h-6 mr-2 text-blue-600"/>LinkedIn</a>
                                 
                                 <a
                                 href="mailto:yashkatare997@gmail.com"
@@ -618,10 +618,11 @@ export default function App() {
             <div className="text-center">
                 <p className="font-semibold text-white mb-4">Software Developer</p>
                 <div className="flex justify-center gap-6 mb-4">
-                     <a href="https://www.linkedin.com/in/tushar-varathe-a94229325/" target="_blank" rel="noopener noreferrer" className="hover:text-blue-400 transition transform hover:scale-110"><LinkedInIcon className="w-6 h-6"/></a>
-                    <a href="https://github.com/TusharVarathe" target="_blank" rel="noopener noreferrer" className="hover:text-white transition transform hover:scale-110"><GithubIcon className="w-6 h-6"/></a>
+                     <a href="https://www.linkedin.com/in/yash-katare-seo/" target="_blank" rel="noopener noreferrer" className="hover:text-blue-400 transition transform hover:scale-110"><LinkedInIcon className="w-6 h-6"/></a>
+                  {/* <a href="https://github.com/TusharVarathe" target="_blank" rel="noopener noreferrer" className="hover:text-white transition transform hover:scale-110"><GithubIcon className="w-6 h-6"/></a>
                     <a href="https://leetcode.com/u/tusharvarathe/" target="_blank" rel="noopener noreferrer" className="hover:text-yellow-400 transition transform hover:scale-110"><LeetCodeIcon className="w-6 h-6"/></a>
                     <a href="https://codeforces.com/profile/tushar13v" target="_blank" rel="noopener noreferrer" className="hover:text-red-400 transition transform hover:scale-110"><CodeforcesIcon className="w-6 h-6"/></a>
+                */}
                 </div>
                 <p className="text-sm">&copy; {new Date().getFullYear()} Yash Katare. Designed with passion for technology and innovation.</p>
             </div>
@@ -668,12 +669,18 @@ const ProjectCard = ({ title, description, icon, gradient, tags, points, demoLin
                 ))}
             </div>
             <div className="mt-auto flex gap-4">
-                <a href={codeLink || '#'} target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center w-1/2 bg-slate-700 text-white font-semibold py-2 px-4 rounded-lg hover:bg-slate-600 transition-all transform hover:scale-105">
+            <a href={codeLink || 'https://loganix.com/'} target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center w-1/2 bg-slate-700 text-white font-semibold py-2 px-4 rounded-lg hover:bg-slate-600 transition-all transform hover:scale-105">
+                    <CodeIcon className="w-5 h-5 mr-2"/> LINK
+
+              
+              
+              {/* <a href={codeLink || '#'} target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center w-1/2 bg-slate-700 text-white font-semibold py-2 px-4 rounded-lg hover:bg-slate-600 transition-all transform hover:scale-105">
                     <CodeIcon className="w-5 h-5 mr-2"/> Code
                 </a>
                  <a href={demoLink || '#'} target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center w-1/2 bg-slate-700 text-white font-semibold py-2 px-4 rounded-lg hover:bg-slate-600 transition-all transform hover:scale-105">
                     <ExternalLinkIcon className="w-5 h-5 mr-2"/> Demo
                 </a>
+               */} 
             </div>
         </div>
     </div>
@@ -689,5 +696,6 @@ const CertificationCard = ({ title, subtitle, icon }) => (
         </div>
     </GlassCard>
 );
+
 
 
