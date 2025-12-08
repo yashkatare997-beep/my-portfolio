@@ -470,7 +470,10 @@ export default function App() {
                     <a href="https://drive.google.com/file/d/18GnfyKuhh7iKinsQQhbFvKMXzWdujAkB/view?usp=sharing"><CertificationCard title="Organic Marketing:" subtitle="Facebook Groups For Small Businesses" icon={<CodeIcon className="w-10 h-10 text-blue-400" />} />
                     </a><a href="https://drive.google.com/file/d/1tnTklsYRh02GXeMgrnowoyIYTk-mLmWv/view?usp=sharing"><CertificationCard title="Microsoft Excel" subtitle="Getting Started with Microsoft Excel" icon={<CodeIcon className="w-10 h-10 text-blue-400" />} />
                     </a><a href="https://drive.google.com/file/d/1sXZlkJTL7CF3hbmF2AcIYMsrx8l_AF7h/view?usp=sharing"><CertificationCard title="Search Engine Optimization" subtitle="Search Engine Optimization (SEO) with Squarespace" icon={<ShieldIcon className="w-10 h-10 text-blue-400" />} />
+                    </a><a href="https://drive.google.com/file/d/1oTHgLv8MLpwhwoAPLaN6PkMLQkejxnuC/view?usp=sharing"><CertificationCard title="Carina Softlabs Internship’" subtitle="Digital marketing SEO-link building" icon={<ShieldIcon className="w-10 h-10 text-blue-400" />} />
                     </a>
+
+                  https://drive.google.com/file/d/1oTHgLv8MLpwhwoAPLaN6PkMLQkejxnuC/view?usp=sharing
                 </div>
             </div>
         </section>
@@ -819,6 +822,7 @@ const CertificationCard = ({ title, subtitle, icon }) => (
         </div>
     </GlassCard>
 );
+
 
 
 
