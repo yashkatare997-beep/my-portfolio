@@ -650,7 +650,7 @@ const SkillCard = ({ title, icon, skills }) => (
     </GlassCard>
 );
 
-const ProjectCard = ({ title, description, icon, gradient, tags, points, demoLink, codeLink }) => (
+const ProjectCard1 = ({ title, description, icon, gradient, tags, points, demoLink, codeLink }) => (
     <div className="bg-slate-900/80 rounded-xl shadow-xl overflow-hidden flex flex-col h-full border border-slate-700/50 transition-all duration-300 hover:scale-[1.02] hover:shadow-2xl hover:shadow-purple-500/20">
         <div className={`bg-gradient-to-br ${gradient} h-48 flex items-center justify-center`}>
             {icon}
@@ -688,6 +688,128 @@ const ProjectCard = ({ title, description, icon, gradient, tags, points, demoLin
 );
 
 
+const ProjectCard2 = ({ title, description, icon, gradient, tags, points, demoLink, codeLink }) => (
+    <div className="bg-slate-900/80 rounded-xl shadow-xl overflow-hidden flex flex-col h-full border border-slate-700/50 transition-all duration-300 hover:scale-[1.02] hover:shadow-2xl hover:shadow-purple-500/20">
+        <div className={`bg-gradient-to-br ${gradient} h-48 flex items-center justify-center`}>
+            {icon}
+        </div>
+        <div className="p-6 flex flex-col flex-grow">
+            <h3 className="text-2xl font-bold text-white mb-2">{title}</h3>
+            <p className="text-slate-400 mb-4 flex-grow">{description}</p>
+            <div className="mb-4">
+                <ul className="list-disc list-inside text-slate-400 space-y-1">
+                    {points.map(point => <li key={point}>{point}</li>)}
+                </ul>
+            </div>
+            <div className="flex flex-wrap gap-2 mb-6">
+                {tags.map(tag => (
+                    <span key={tag} className="bg-slate-700 text-blue-300 text-xs font-semibold px-2.5 py-1 rounded-full">{tag}</span>
+                ))}
+            </div>
+            <div className="mt-auto flex gap-4">
+                <a href={codeLink || 'https://eddypump.com/'} target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center w-1/2 bg-slate-700 text-white font-semibold py-2 px-4 rounded-lg hover:bg-slate-600 transition-all transform hover:scale-105">
+                    <CodeIcon className="w-5 h-5 mr-2"/> Link
+                </a>
+                 
+            </div>
+        </div>
+    </div>
+);
+
+
+const ProjectCard3 = ({ title, description, icon, gradient, tags, points, demoLink, codeLink }) => (
+    <div className="bg-slate-900/80 rounded-xl shadow-xl overflow-hidden flex flex-col h-full border border-slate-700/50 transition-all duration-300 hover:scale-[1.02] hover:shadow-2xl hover:shadow-purple-500/20">
+        <div className={`bg-gradient-to-br ${gradient} h-48 flex items-center justify-center`}>
+            {icon}
+        </div>
+        <div className="p-6 flex flex-col flex-grow">
+            <h3 className="text-2xl font-bold text-white mb-2">{title}</h3>
+            <p className="text-slate-400 mb-4 flex-grow">{description}</p>
+            <div className="mb-4">
+                <ul className="list-disc list-inside text-slate-400 space-y-1">
+                    {points.map(point => <li key={point}>{point}</li>)}
+                </ul>
+            </div>
+            <div className="flex flex-wrap gap-2 mb-6">
+                {tags.map(tag => (
+                    <span key={tag} className="bg-slate-700 text-blue-300 text-xs font-semibold px-2.5 py-1 rounded-full">{tag}</span>
+                ))}
+            </div>
+            <div className="mt-auto flex gap-4">
+                <a href={codeLink || 'https://shedplans.org/'} target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center w-1/2 bg-slate-700 text-white font-semibold py-2 px-4 rounded-lg hover:bg-slate-600 transition-all transform hover:scale-105">
+                    <CodeIcon className="w-5 h-5 mr-2"/> Link
+                </a>
+                 
+            </div>
+        </div>
+    </div>
+);
+
+const ProjectCard4 = ({ title, description, icon, gradient, tags, points, demoLink, codeLink }) => (
+    <div className="bg-slate-900/80 rounded-xl shadow-xl overflow-hidden flex flex-col h-full border border-slate-700/50 transition-all duration-300 hover:scale-[1.02] hover:shadow-2xl hover:shadow-purple-500/20">
+        <div className={`bg-gradient-to-br ${gradient} h-48 flex items-center justify-center`}>
+            {icon}
+        </div>
+        <div className="p-6 flex flex-col flex-grow">
+            <h3 className="text-2xl font-bold text-white mb-2">{title}</h3>
+            <p className="text-slate-400 mb-4 flex-grow">{description}</p>
+            <div className="mb-4">
+                <ul className="list-disc list-inside text-slate-400 space-y-1">
+                    {points.map(point => <li key={point}>{point}</li>)}
+                </ul>
+            </div>
+            <div className="flex flex-wrap gap-2 mb-6">
+                {tags.map(tag => (
+                    <span key={tag} className="bg-slate-700 text-blue-300 text-xs font-semibold px-2.5 py-1 rounded-full">{tag}</span>
+                ))}
+            </div>
+            <div className="mt-auto flex gap-4">
+                <a href={codeLink || 'https://easycoops.com/'} target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center w-1/2 bg-slate-700 text-white font-semibold py-2 px-4 rounded-lg hover:bg-slate-600 transition-all transform hover:scale-105">
+                    <CodeIcon className="w-5 h-5 mr-2"/> Link
+                </a>
+                 
+            </div>
+        </div>
+    </div>
+);
+
+const ProjectCard5 = ({ title, description, icon, gradient, tags, points, demoLink, codeLink }) => (
+    <div className="bg-slate-900/80 rounded-xl shadow-xl overflow-hidden flex flex-col h-full border border-slate-700/50 transition-all duration-300 hover:scale-[1.02] hover:shadow-2xl hover:shadow-purple-500/20">
+        <div className={`bg-gradient-to-br ${gradient} h-48 flex items-center justify-center`}>
+            {icon}
+        </div>
+        <div className="p-6 flex flex-col flex-grow">
+            <h3 className="text-2xl font-bold text-white mb-2">{title}</h3>
+            <p className="text-slate-400 mb-4 flex-grow">{description}</p>
+            <div className="mb-4">
+                <ul className="list-disc list-inside text-slate-400 space-y-1">
+                    {points.map(point => <li key={point}>{point}</li>)}
+                </ul>
+            </div>
+            <div className="flex flex-wrap gap-2 mb-6">
+                {tags.map(tag => (
+                    <span key={tag} className="bg-slate-700 text-blue-300 text-xs font-semibold px-2.5 py-1 rounded-full">{tag}</span>
+                ))}
+            </div>
+            <div className="mt-auto flex gap-4">
+                <a href={codeLink || 'https://www.businesscardjunction.com/'} target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center w-1/2 bg-slate-700 text-white font-semibold py-2 px-4 rounded-lg hover:bg-slate-600 transition-all transform hover:scale-105">
+                    <CodeIcon className="w-5 h-5 mr-2"/> Link
+                </a>
+                 
+            </div>
+        </div>
+    </div>
+);
+
+
+
+
+
+
+
+
+
+
 const CertificationCard = ({ title, subtitle, icon }) => (
     <GlassCard>
         <div className="text-center flex flex-col items-center justify-center h-full">
@@ -697,6 +819,7 @@ const CertificationCard = ({ title, subtitle, icon }) => (
         </div>
     </GlassCard>
 );
+
 
 
 
