@@ -391,20 +391,20 @@ export default function App() {
                     <p className="text-lg mt-2">A showcase of my SEO expertise through real-world client success</p>
                 </div>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    <ProjectCard
+                    <ProjectCard1
                         title="Loganix"
                         description="Worked with Loganix, a well-known SEO and link-building provider, to strengthen their backlink profile through high-authority placements."
                         icon={<TrendingUpIcon className="w-12 h-12 text-white" />}
                         gradient="from-indigo-500 to-purple-600"
-                        tags={['White-Hat Outreach', 'Guest Posts', 'SaaS Backlinks', 'Competitor Analysis  ']}
+                        tags={['Outreach', 'Guest Post', 'SAAS Backlinks', 'Competitor Analysis']}
                         points={[
                             "35+ high-authority contextual backlinks",
-                            "Guest posts + link insertions in HR & SaaS blogs",
+                            "Guest posts + link insertions in HR & SAAS blogs",
                             "Competitor backlink gap analysis",
                             "Anchors optimized for service-based keywords"
                         ]}
                     />
-                    <ProjectCard
+                    <ProjectCard2
                         title="Eddy Pump"
                         description="Strengthened the online presence of Eddy Pump, a global leader in slurry pumps and dredging equipment, by building high-quality, niche-relevant backlinks."
                         icon={<BotIcon className="w-12 h-12 text-white" />}
@@ -417,7 +417,7 @@ export default function App() {
                             "Improved link authority for key product and service pages"
                         ]}
                     />
-                    <ProjectCard
+                    <ProjectCard3
                         title="ShedPlans"
                         description="Worked on strengthening ShedPlans’ search visibility by creating targeted backlink strategies for a niche construction and DIY website offering shed and storage-building plans."
                         icon={<BriefcaseIcon className="w-12 h-12 text-white" />}
@@ -430,12 +430,12 @@ export default function App() {
                             "Improved keyword visibility for shed plans, storage plans, and related queries"
                         ]}
                     />
-                     <ProjectCard
+                     <ProjectCard4
                         title="EasyCoop"
                         description="I worked on link-building for EasyCoop, a cooperative management platform designed to simplify member records, savings, and loan management."
                         icon={<TrendingUpIcon className="w-12 h-12 text-white" />}
                         gradient="from-indigo-500 to-purple-600"
-                        tags={['Python', 'Fyers API', 'SMA Strategy', 'Real-time']}
+                        tags={['keyword search', 'SAAS Niches', 'Niche Edits', 'Real-time']}
                         points={[
                             "Built high-quality backlinks from fintech, SaaS, and cooperative-management websites",
                             "Ran guest-post outreach campaigns targeting financial and co-op industry blogs",
@@ -443,12 +443,12 @@ export default function App() {
                             "Secured directory and resource-page links from trusted financial and cooperative directories"
                         ]}
                     />
-                     <ProjectCard
+                     <ProjectCard5
                         title="Business Card Junction"
                         description="I worked on strengthening their SEO presence and building backlinks to improve their domain authority and online visibility."
                         icon={<BotIcon className="w-12 h-12 text-white" />}
                         gradient="from-green-500 to-teal-600"
-                        tags={['Python', 'Fyers API', 'SMA Strategy', 'Real-time']}
+                        tags={['Industry Prospecting', 'Guest Posts', 'Niche Edits', 'Niche Edits']}
                         points={[
                             "Conducted outreach and guest-post/link-insertion campaigns on design, printing, business-services and stationery-niche blogs.",
                             "Performed competitor backlink analysis to discover high-quality domains and replicate successful link sources.",
@@ -650,7 +650,7 @@ const SkillCard = ({ title, icon, skills }) => (
     </GlassCard>
 );
 
-const ProjectCard = ({ title, description, icon, gradient, tags, points, demoLink, codeLink }) => (
+const ProjectCard1 = ({ title, description, icon, gradient, tags, points, demoLink, codeLink }) => (
     <div className="bg-slate-900/80 rounded-xl shadow-xl overflow-hidden flex flex-col h-full border border-slate-700/50 transition-all duration-300 hover:scale-[1.02] hover:shadow-2xl hover:shadow-purple-500/20">
         <div className={`bg-gradient-to-br ${gradient} h-48 flex items-center justify-center`}>
             {icon}
@@ -680,7 +680,107 @@ const ProjectCard = ({ title, description, icon, gradient, tags, points, demoLin
                  <a href={demoLink || '#'} target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center w-1/2 bg-slate-700 text-white font-semibold py-2 px-4 rounded-lg hover:bg-slate-600 transition-all transform hover:scale-105">
                     <ExternalLinkIcon className="w-5 h-5 mr-2"/> Demo
                 </a>
-               */} 
+               */}
+
+              const ProjectCard2 = ({ title, description, icon, gradient, tags, points, demoLink, codeLink }) => (
+    <div className="bg-slate-900/80 rounded-xl shadow-xl overflow-hidden flex flex-col h-full border border-slate-700/50 transition-all duration-300 hover:scale-[1.02] hover:shadow-2xl hover:shadow-purple-500/20">
+        <div className={`bg-gradient-to-br ${gradient} h-48 flex items-center justify-center`}>
+            {icon}
+        </div>
+        <div className="p-6 flex flex-col flex-grow">
+            <h3 className="text-2xl font-bold text-white mb-2">{title}</h3>
+            <p className="text-slate-400 mb-4 flex-grow">{description}</p>
+            <div className="mb-4">
+                <ul className="list-disc list-inside text-slate-400 space-y-1">
+                    {points.map(point => <li key={point}>{point}</li>)}
+                </ul>
+            </div>
+            <div className="flex flex-wrap gap-2 mb-6">
+                {tags.map(tag => (
+                    <span key={tag} className="bg-slate-700 text-blue-300 text-xs font-semibold px-2.5 py-1 rounded-full">{tag}</span>
+                ))}
+            </div>
+            <div className="mt-auto flex gap-4">
+            <a href={codeLink || 'https://eddypump.com/'} target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center w-1/2 bg-slate-700 text-white font-semibold py-2 px-4 rounded-lg hover:bg-slate-600 transition-all transform hover:scale-105">
+                    <CodeIcon className="w-5 h-5 mr-2"/> LINK
+
+              </a>
+
+
+              const ProjectCard3 = ({ title, description, icon, gradient, tags, points, demoLink, codeLink }) => (
+    <div className="bg-slate-900/80 rounded-xl shadow-xl overflow-hidden flex flex-col h-full border border-slate-700/50 transition-all duration-300 hover:scale-[1.02] hover:shadow-2xl hover:shadow-purple-500/20">
+        <div className={`bg-gradient-to-br ${gradient} h-48 flex items-center justify-center`}>
+            {icon}
+        </div>
+        <div className="p-6 flex flex-col flex-grow">
+            <h3 className="text-2xl font-bold text-white mb-2">{title}</h3>
+            <p className="text-slate-400 mb-4 flex-grow">{description}</p>
+            <div className="mb-4">
+                <ul className="list-disc list-inside text-slate-400 space-y-1">
+                    {points.map(point => <li key={point}>{point}</li>)}
+                </ul>
+            </div>
+            <div className="flex flex-wrap gap-2 mb-6">
+                {tags.map(tag => (
+                    <span key={tag} className="bg-slate-700 text-blue-300 text-xs font-semibold px-2.5 py-1 rounded-full">{tag}</span>
+                ))}
+            </div>
+            <div className="mt-auto flex gap-4">
+            <a href={codeLink || 'https://shedplans.org/'} target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center w-1/2 bg-slate-700 text-white font-semibold py-2 px-4 rounded-lg hover:bg-slate-600 transition-all transform hover:scale-105">
+                    <CodeIcon className="w-5 h-5 mr-2"/> LINK
+
+              </a>
+
+              const ProjectCard4 = ({ title, description, icon, gradient, tags, points, demoLink, codeLink }) => (
+    <div className="bg-slate-900/80 rounded-xl shadow-xl overflow-hidden flex flex-col h-full border border-slate-700/50 transition-all duration-300 hover:scale-[1.02] hover:shadow-2xl hover:shadow-purple-500/20">
+        <div className={`bg-gradient-to-br ${gradient} h-48 flex items-center justify-center`}>
+            {icon}
+        </div>
+        <div className="p-6 flex flex-col flex-grow">
+            <h3 className="text-2xl font-bold text-white mb-2">{title}</h3>
+            <p className="text-slate-400 mb-4 flex-grow">{description}</p>
+            <div className="mb-4">
+                <ul className="list-disc list-inside text-slate-400 space-y-1">
+                    {points.map(point => <li key={point}>{point}</li>)}
+                </ul>
+            </div>
+            <div className="flex flex-wrap gap-2 mb-6">
+                {tags.map(tag => (
+                    <span key={tag} className="bg-slate-700 text-blue-300 text-xs font-semibold px-2.5 py-1 rounded-full">{tag}</span>
+                ))}
+            </div>
+            <div className="mt-auto flex gap-4">
+            <a href={codeLink || 'https://easycoops.com/'} target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center w-1/2 bg-slate-700 text-white font-semibold py-2 px-4 rounded-lg hover:bg-slate-600 transition-all transform hover:scale-105">
+                    <CodeIcon className="w-5 h-5 mr-2"/> LINK
+
+              </a>
+
+              const ProjectCard5 = ({ title, description, icon, gradient, tags, points, demoLink, codeLink }) => (
+    <div className="bg-slate-900/80 rounded-xl shadow-xl overflow-hidden flex flex-col h-full border border-slate-700/50 transition-all duration-300 hover:scale-[1.02] hover:shadow-2xl hover:shadow-purple-500/20">
+        <div className={`bg-gradient-to-br ${gradient} h-48 flex items-center justify-center`}>
+            {icon}
+        </div>
+        <div className="p-6 flex flex-col flex-grow">
+            <h3 className="text-2xl font-bold text-white mb-2">{title}</h3>
+            <p className="text-slate-400 mb-4 flex-grow">{description}</p>
+            <div className="mb-4">
+                <ul className="list-disc list-inside text-slate-400 space-y-1">
+                    {points.map(point => <li key={point}>{point}</li>)}
+                </ul>
+            </div>
+            <div className="flex flex-wrap gap-2 mb-6">
+                {tags.map(tag => (
+                    <span key={tag} className="bg-slate-700 text-blue-300 text-xs font-semibold px-2.5 py-1 rounded-full">{tag}</span>
+                ))}
+            </div>
+            <div className="mt-auto flex gap-4">
+            <a href={codeLink || 'https://www.businesscardjunction.com/'} target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center w-1/2 bg-slate-700 text-white font-semibold py-2 px-4 rounded-lg hover:bg-slate-600 transition-all transform hover:scale-105">
+                    <CodeIcon className="w-5 h-5 mr-2"/> LINK
+
+              </a>
+
+
+              
             </div>
         </div>
     </div>
@@ -696,6 +796,7 @@ const CertificationCard = ({ title, subtitle, icon }) => (
         </div>
     </GlassCard>
 );
+
 
 
 
