@@ -681,6 +681,9 @@ const ProjectCard1 = ({ title, description, icon, gradient, tags, points, demoLi
                     <ExternalLinkIcon className="w-5 h-5 mr-2"/> Demo
                 </a>
                */}
+              </div>
+        </div>
+    </div>
 
               const ProjectCard2 = ({ title, description, icon, gradient, tags, points, demoLink, codeLink }) => (
     <div className="bg-slate-900/80 rounded-xl shadow-xl overflow-hidden flex flex-col h-full border border-slate-700/50 transition-all duration-300 hover:scale-[1.02] hover:shadow-2xl hover:shadow-purple-500/20">
@@ -705,6 +708,9 @@ const ProjectCard1 = ({ title, description, icon, gradient, tags, points, demoLi
                     <CodeIcon className="w-5 h-5 mr-2"/> LINK
 
               </a>
+              </div>
+        </div>
+    </div>
 
 
               const ProjectCard3 = ({ title, description, icon, gradient, tags, points, demoLink, codeLink }) => (
@@ -730,6 +736,9 @@ const ProjectCard1 = ({ title, description, icon, gradient, tags, points, demoLi
                     <CodeIcon className="w-5 h-5 mr-2"/> LINK
 
               </a>
+              </div>
+        </div>
+    </div>
 
               const ProjectCard4 = ({ title, description, icon, gradient, tags, points, demoLink, codeLink }) => (
     <div className="bg-slate-900/80 rounded-xl shadow-xl overflow-hidden flex flex-col h-full border border-slate-700/50 transition-all duration-300 hover:scale-[1.02] hover:shadow-2xl hover:shadow-purple-500/20">
@@ -754,6 +763,9 @@ const ProjectCard1 = ({ title, description, icon, gradient, tags, points, demoLi
                     <CodeIcon className="w-5 h-5 mr-2"/> LINK
 
               </a>
+              </div>
+        </div>
+    </div>
 
               const ProjectCard5 = ({ title, description, icon, gradient, tags, points, demoLink, codeLink }) => (
     <div className="bg-slate-900/80 rounded-xl shadow-xl overflow-hidden flex flex-col h-full border border-slate-700/50 transition-all duration-300 hover:scale-[1.02] hover:shadow-2xl hover:shadow-purple-500/20">
