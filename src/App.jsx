@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+3import React, { useState, useEffect } from 'react';
 import profilephoto from './assets/Profile.png';
 
 // --- SVG Icons ---
@@ -444,7 +444,7 @@ export default function App() {
                         gradient="from-green-500 to-teal-600"
                         tags={['Industry Prospecting', 'Guest Posts', 'Niche Edits', 'Niche Edits']}
                         points={[
-                            "Conducted outreach and guest-post/link-insertion campaigns on design, printing, business-services and stationery-niche blogs.",
+                            "Conducted outreach and guest-posts/link-insertions campaigns on design, printing, business-services and stationery-niche blogs.",
                             "Performed competitor backlink analysis to discover high-quality domains and replicate successful link sources.",
                             "Built resource-page links and directory backlinks targeting printing/design directories to improve niche relevance and trust.",
                             "Accurate order placement and exit logic"
@@ -487,8 +487,8 @@ export default function App() {
                             <div className="flex items-center mb-2">
                                 <GraduationCapIcon className="w-8 h-8 text-blue-500 mr-3" />
                                 <div>
-                                    <h3 className="text-2xl font-bold text-slate-800 dark:text-white">Bachelor's of commerce + Mater's of bussiness Admistration (5 years)</h3>
-                                    <p className="text-md text-slate-600 dark:text-slate-400">B.com+IP  + MBA (Fincance + DIgital Marketing)</p>
+                                    <h3 className="text-2xl font-bold text-slate-800 dark:text-white">Bachelor of commerce + Master of business Administration  (5 years)</h3>
+                                    <p className="text-md text-slate-600 dark:text-slate-400">B.com+IP  + MBA (Finance + Digital Marketing)</p>
                                 </div>
                             </div>
                             <p className="text-lg font-semibold text-slate-700 dark:text-slate-300">Medicaps University </p>
@@ -552,7 +552,7 @@ export default function App() {
       <footer className="bg-slate-900/80 text-slate-400 relative z-10">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-8">
             <div className="text-center">
-                <p className="font-semibold text-white mb-4">SEO Expert || Off-page SEO || On-Page SEO || Techanical SEO || Link Building </p>
+                <p className="font-semibold text-white mb-4">SEO Expert || Off-page SEO || On-Page SEO || Technical SEO || Link Building </p>
                 <div className="flex justify-center gap-6 mb-4">
                   
                 </div>
@@ -734,6 +734,7 @@ const CertificationCard = ({ title, subtitle, icon }) => (
         </div>
     </GlassCard>
 );
+
 
 
 
