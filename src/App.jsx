@@ -1,4 +1,4 @@
-3import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import profilephoto from './assets/Profile.png';
 
 // --- SVG Icons ---
@@ -196,6 +196,7 @@ export default function App() {
     { title: 'Projects', href: '#projects' },
     { title: 'Skills', href: '#skills' },
     { title: 'Education', href: '#education' },
+   
   ];
   
   const SectionTitle = ({children}) => (
@@ -271,7 +272,7 @@ export default function App() {
                   <a href="#projects" className="inline-flex items-center bg-gradient-to-r from-blue-500 to-purple-600 text-white font-semibold py-3 px-6 rounded-lg hover:from-blue-600 hover:to-purple-700 transition-all shadow-lg transform hover:scale-105">
                     <ChevronLeftIcon className="w-5 h-5 mr-2" /> View My Work <ChevronRightIcon className="w-5 h-5 ml-2" />
                   </a>
-                   <a href="https://drive.google.com/file/d/1OM_IzjADJE7lReYKUo9aOpFk47miP2ie/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="inline-flex items-center bg-slate-200 dark:bg-slate-800 text-slate-800 dark:text-white font-semibold py-3 px-6 rounded-lg hover:bg-slate-300 dark:hover:bg-slate-700 transition-all shadow-lg transform hover:scale-105">
+                  <a href="https://drive.google.com/file/d/1OM_IzjADJE7lReYKUo9aOpFk47miP2ie/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="inline-flex items-center bg-slate-200 dark:bg-slate-800 text-slate-800 dark:text-white font-semibold py-3 px-6 rounded-lg hover:bg-slate-300 dark:hover:bg-slate-700 transition-all shadow-lg transform hover:scale-105">
                     Download Resume <ExternalLinkIcon className="w-5 h-5 ml-2" />
                   </a>
                 </div>
@@ -487,7 +488,7 @@ export default function App() {
                             <div className="flex items-center mb-2">
                                 <GraduationCapIcon className="w-8 h-8 text-blue-500 mr-3" />
                                 <div>
-                                    <h3 className="text-2xl font-bold text-slate-800 dark:text-white">Bachelor of commerce + Master of business Administration  (5 years)</h3>
+                                    <h3 className="text-2xl font-bold text-slate-800 dark:text-white">Bachelor of commerce + Master of business Administration (5 years)</h3>
                                     <p className="text-md text-slate-600 dark:text-slate-400">B.com+IP  + MBA (Finance + Digital Marketing)</p>
                                 </div>
                             </div>
@@ -530,7 +531,7 @@ export default function App() {
         </section>
 
       {/* --- Contact Section --- */}
-        <section id="contact" className="py-20">
+        <section id="" className="py-20">
             <div className="container mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="text-center mb-12">
                     
@@ -552,7 +553,7 @@ export default function App() {
       <footer className="bg-slate-900/80 text-slate-400 relative z-10">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-8">
             <div className="text-center">
-                <p className="font-semibold text-white mb-4">SEO Expert || Off-page SEO || On-Page SEO || Technical SEO || Link Building </p>
+                <p className="font-semibold text-white mb-4">SEO Expert || Off-page SEO || On-Page SEO || Techanical SEO || Link Building </p>
                 <div className="flex justify-center gap-6 mb-4">
                   
                 </div>
@@ -734,9 +735,6 @@ const CertificationCard = ({ title, subtitle, icon }) => (
         </div>
     </GlassCard>
 );
-
-
-
 
 
 
