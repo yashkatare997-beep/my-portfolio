@@ -196,7 +196,6 @@ export default function App() {
     { title: 'Projects', href: '#projects' },
     { title: 'Skills', href: '#skills' },
     { title: 'Education', href: '#education' },
-    { title: 'Contact', href: '#contact' },
   ];
   
   const SectionTitle = ({children}) => (
@@ -732,6 +731,7 @@ const CertificationCard = ({ title, subtitle, icon }) => (
         </div>
     </GlassCard>
 );
+
 
 
 
